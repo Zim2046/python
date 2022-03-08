@@ -24,7 +24,7 @@ class User:
         self.account_balance -= amount
         person.account_balance += amount
         print(f"{self.name} just transferred ${amount} to {person.name}")
-        return self  # put this here if you want to chain thingssss
+        return self  # put this here if you want to chain things
 
 
 Tim = User(0, "Tim")
