@@ -2,7 +2,7 @@ Assignment: User
 
 -[]-Create a file with the User class, including the __init__ and make_deposit methods
 
-Add a make_withdrawal method to the User class
+-{}- Add a make_withdrawal method to the User class
 
 Add a display_user_balance method to the User class
 
