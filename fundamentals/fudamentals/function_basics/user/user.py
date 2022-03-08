@@ -28,7 +28,7 @@ class User:
 
 
 Tim = User(0, "Tim")
-Nibbles = User(0, "Mr. Nibbles")
+Nibbles = User(0, "Nibbs")
 Savannah = User(0, "Savannah")
 
 Tim.display_user_balance().make_deposit(1000).make_deposit(5000).make_deposit(
