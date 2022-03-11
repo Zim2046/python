@@ -12,9 +12,14 @@
 
     <div class="container">
 
-    {% for j in range(colDimension) %}
+    <h1>Here is your {{rowDimension}} X {{colDimension}} Checkerboard</h1> 
+
+    {% for j in range(colDimension) %}          {# This  out loop handles each row after its done building #}
+    
       <div class="wrapper">
-          {% for i in range(rowDimension) %}
+
+          {% for i in range(rowDimension) %}    {# This  out loop handles each row after its done building #}
+
               {% if j%2 == 0 %}
                   {% if i%2 == 0 %}    
                       <div class="box" style="background-color: {{colorOne}}"></div>
@@ -28,8 +33,11 @@
                       <div class="box" style="background-color: {{colorOne}}"></div>
                   {% endif %}
               {% endif %}
+
           {% endfor %}
+
       </div> 
+
     {% endfor %}
 
     </div>
