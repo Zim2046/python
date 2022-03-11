@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+.container {
+  padding-left: 125px;
+}
+#wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.box {
+  height: 50px;
+  width: 50;
+  border: 3px solid black;
+  border-radius: 9px;
+}
+color-cream {
+  background-color: linen;
+}
+color-red {
+  background-color: red;
+}
