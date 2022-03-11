@@ -5,17 +5,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def square():
-    return render_template("checkerboard.html", colDimension=8, rowDimension=8, colorOne='red', colorTwo='black')
+    return render_template('checkerboard.html', colDimension=8, rowDimension=8, colorOne='red', colorTwo='black')
 
 
 @app.route('/<int:height>')
 def rect(height):
-    return render_template("checkerboard.html", colDimension=height, rowDimension=8,  colorOne='red', colorTwo='black')
+    return render_template('checkerboard.html', colDimension=height, rowDimension=8,  colorOne='red', colorTwo='black')
 
 
 @app.route('/<int:width>/<int:height>')
 def custom(width, height):
-    return render_template("checkerboard.html", colDimension=height, rowDimension=width,  colorOne='red', colorTwo='black')
+    return render_template('checkerboard.html', colDimension=height, rowDimension=width,  colorOne='red', colorTwo='black')
 
 
 @app.route('/<int:width>/<int:height>/<string:colorOneIn>/<string:colorTwoIn>')
