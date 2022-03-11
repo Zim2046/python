@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .container{
+            padding-left: 125px;
+        }
+        #wrapper {
+            display: flex;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            width:1000px;
+            margin: 0 auto;
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+            border-radius: 9px;
+        }
+        body {
+            background-color: linen;
+        }
+        h1 {
+            color: maroon;
+            margin: 0 auto;
+            align-items: center;
+            padding-right: 140px;
+        } 
+        .header{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Ground</title>
+</head>
+
+<body>
+    {% if phrase == "Welcome!"%}
+    <h1 style="text-align: center;">{{phrase}}</h1>
+    {% endif %};
+<div class="container">
+    <div id="wrapper">
+        {% for i in range(num) %}    
+        <div class="box" style="background-color: {{color}};"></div>
+        {% endfor %}
+    </div> 
+</div>
+
+</body>
+</html> 
