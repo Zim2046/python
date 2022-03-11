@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/checkerboard.css')}}">
+    <title>Checkerboard Generator</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    {% for j in range(colDimension) %}
+      <div class="wrapper">
+          {% for i in range(rowDimension) %}
+              {% if j%2 == 0 %}
+                  {% if i%2 == 0 %}    
+                      <div class="box" style="background-color: {{colorOne}}"></div>
+                  {% else %}
+                      <div class="box" style="background-color: {{colorTwo}}"></div>
+                  {% endif %}
+              {% else %}
+                  {% if i%2 == 0 %} 
+                      <div class="box" style="background-color: {{colorTwo}}"></div>
+                  {% else %}
+                      <div class="box" style="background-color: {{colorOne}}"></div>
+                  {% endif %}
+              {% endif %}
+          {% endfor %}
+      </div> 
+    {% endfor %}
+
+    </div>
+
+  </body>
+</html>
