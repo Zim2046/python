@@ -49,20 +49,5 @@ def show_user_profile(num, name):
 # # app.run(debug=True) should be the very last statement!f
 
 
-# @app.route('/<input>')
-# def error_trailing_name(input):
-#     rp = request.path
-#     expressionOe =
-#     if rp.endswith() != '/' != '/' or input != '/repeat/<int:num>/<string:name>' or input != '/say/<string:name>'
-#     return 'Sorry! No response. Try again.'
-# # app.run(debug=True) should be the very last statement!f
-
-
-# def clear_trailing():
-#     rp = request.path
-#     if rp.endswith() != '/':
-#         return 'Sorry! No response. Try again.'
-
-
 if __name__ == "__main__":   # Ensure this file is being run directly and not from a different module
     app.run(debug=True)    # Run the app in debug mode.
