@@ -10,7 +10,7 @@ Objectives:
 
 - Remember in our User methods, we can now access the BankAccount class through our self.account attribute.
 
-- [x] Update the User class __init__ method
+- [x] **Update the User class __init__ method**
 
 - [x] Update the User class make_deposit method
 

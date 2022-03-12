@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
+    <title>Hello Flask</title>
+  </head>
+
+  <body>
+    {# <h1>{{times*userName}}</h1>
+
+    {% for a in range(0,times) %}
+        <h1>Hello {{userName}}</h1>
+    {% endfor %} #}
+
+    <h1>Random Numbers</h1>
+    {% for number in random_numbers %}
+        <p>{{ number }}</p>
+    {% endfor %}
+    <h1>Students</h1>
+    {% for student in students %}
+        <p>{{ student['name'] }} - {{ student['age'] }}</p>
+    {% endfor %}
+
+
+  {# <script type="text/javascript" src="{{ url_for('static', filename='/js/my_script.js') }}"></script> #}
+  {# <img src="{{ url_for('static', filename='img/my_img.png') }}"> #}
+  </body>
+</html>

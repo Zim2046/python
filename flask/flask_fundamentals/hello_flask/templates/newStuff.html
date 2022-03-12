@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ user }}</h1>
+    <p>{{ digit }}</p>
+
+    {% for i in range(0, digit)%}
+        <p>Hellloooooooooooo, {{user}}!!!!</p>
+    {% endfor %}
+
+    <h3>My Flask Template</h3>
+    <p>Phrase: {{ phrase }}</p>
+    <p>Times: {{ digit }}</p>
+
+    {% for x in range(0,digit): %}
+        <p>{{ phrase }}</p>
+    {% endfor %}
+
+    {% if phrase == "hello" %}
+        <p>The phrase says hello</p>
+    {% endif %}
+
+</body>
+</html>
