@@ -23,7 +23,7 @@
             <tbody>
                     {% for student in students %}
                     <tr>
-                      <th scope="row">{{students.index(student)+1}}</th>
+                      <th scope="row">{{students.index(student)+1}}</th> {# This expression gets the index of  'students' list; adds 1 to it to start at 1; and puts it into the numbering for Bootstrap's template #}
                       <td>{{student['first_name']}}</td> 
                       <td>{{student['last_name']}}</td> 
                       <td>{{student['first_name']}}  {{student['last_name']}}</td> 
