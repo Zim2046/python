@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Moon-Reg";
+  src: url(./font/Moon2.0-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Moon-Reg";
+  font-weight: bold;
+}
+#container {
+  width: 400px;
+  margin: 20px auto;
+  border: black solid 1px;
+  border-radius: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  background-color: #9fc5f8;
+  padding: 10px 30px;
+  font-family: "Moon-Reg";
+  text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.comment-box {
+  padding: 20px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.input {
+  border-radius: 6px;
+  padding: 1px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.text-align {
+  text-align: center;
+}
+.submit {
+  background-color: crimson;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 12px 150px;
+}

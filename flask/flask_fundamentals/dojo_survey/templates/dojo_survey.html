@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/dojo_survey.css')}}">
+    <title>Dojo Survey</title>
+  </head>
+
+  <body>
+
+    <div id="container">
+      <div class="nav">
+          <div class="header">
+              <h1>Dojo Survey</h1>
+          </div>
+      </div>
+      <hr>
+      <div class="main">
+        <form  action="/result" method="post">
+            <div class="content">
+              <div>
+                  <label>Your Name: </label>
+                  <input class="input" type="text" name="name" 
+                  placeholder="Your name..." >
+              </div>
+              <div>
+                <label>Dojo Location: </label>
+                <select class="input" name="location">
+                  <option>San Jose</option>
+                  <option>Burbank</option>
+                  <option>Chicago</option>
+                  <option>Bellevvue</option>
+                </select>
+              </div>
+              <div>
+                <label>Favorite Language: </label>
+                <select class="input" name="language">
+                  <option>Python</option>
+                  <option>Java</option>
+                  <option>JavaScript</option>
+                  <option>C#</option>
+                  <option>HTML/CSS</option>
+                </select>
+              </div>
+            </div> 
+            <div class="center">
+              <div>
+                <input type="radio" name="gender" value="Male" id="Male">
+                <label for="gender"><strong>Male</strong></label>
+              </div>
+              <div>
+                <input type="radio" name="gender" value="Female" id="Female">
+                <label for="gender">Female</label>
+              </div>
+            </div> 
+            <div class="text-align">
+              <div>
+                <input  type="checkbox" name="online" id="online" checked value="Yes">
+                <label for="online">I prefer online clases.</label>
+              </div>
+              <div>
+                <input type="checkbox" name="onsite" id="onsite" checked value="Yes">
+                <label for="onsite">I prefer onsite clases.</label>
+              </div>
+              <div>
+                <input type="checkbox" name="noPreference" id="noPreference" checked value="Yes">
+                <label for="noPreference">I have no preference.</label>
+              </div>
+            </div>    
+                <div class="comment-box">
+                  <div>
+                    <label>Comment (optional): </label>
+                    <textarea class="comment-box" name="comment" cols="45" rows="10"></textarea>
+                  </div>
+                </div>
+                <input class="submit" type="submit" value="submit" >
+        </form>
+          
+        </div> 
+
+    </div>
+  </body>
+</html>

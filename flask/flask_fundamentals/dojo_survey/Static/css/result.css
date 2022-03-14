@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Moon-Reg";
+  src: url(./font/Moon2.0-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Moon-Reg";
+  font-weight: bold;
+}
+#container {
+  width: 400px;
+  margin: 20px auto;
+  border: black solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+h1 {
+  text-decoration: underline;
+}
+h3 {
+  margin: 10px 0;
+}
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home {
+  background-color: crimson;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 12px 150px;
+}
