@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  /* border: black solid 2px; */
+}
+.container,
+h1,
+h5,
+input {
+  text-align: center;
+  margin: 10px;
+}
+.click {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  width: 60px;
+}
+.reset {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  width: 60px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
