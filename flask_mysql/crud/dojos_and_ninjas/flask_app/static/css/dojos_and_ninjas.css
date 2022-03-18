@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: gray; */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.col {
+  margin: 0 30px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+}
+input {
+  margin-left: 20px;
+}

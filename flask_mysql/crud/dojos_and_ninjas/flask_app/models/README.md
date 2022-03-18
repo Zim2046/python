@@ -1,0 +1,1 @@
+All logic related to DATA goes in models
