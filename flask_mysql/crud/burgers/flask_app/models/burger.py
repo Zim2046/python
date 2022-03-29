@@ -1,23 +1,17 @@
 from flask_app.config.mysqlconnection import connectToMySQL
-# burger.py
 
-DATABASE = 'login_reg'
+DATABASE = 'burgers_schema'
 
 
 class Burger:
-    def __init__(self, data):
-        self.id = data['id']
-        self.name = data['name']
-        self.bun = data['bun']
-        self.meat = data['meat']
-        self.calories = data['calories']
-        self.created_at = data['created_at']
-        self.updated_at = data['updated_at']
-
-    @classmethod
-    def save(cls, data):
-        query = "INSERT INTO burgers (name,bun,meat,calories,created_at,updated_at) VALUES (%(name)s,%(bun)s,%(meat)s,%(calories)s,NOW(),NOW())"
-        return connectToMySQL(DATABASE).query_db(query, data)
+    def __init__(self, db_data):
+        self.id = db_data['id']
+        self.name = db_data['name']
+        self.bun = db_data['bun']
+        self.meat = db_data['meat']
+        self.calories = db_data['calories']
+        self.created_at = db_data['created_at']
+        self.updated_at = db_data['updated_at']
 
     @classmethod
     def get_all(cls):
@@ -27,6 +21,12 @@ class Burger:
         for b in burgers_from_db:
             burgers.append(cls(b))
         return burgers
+    
+    @classmethod
+    def save(cls, data):
+        query = "INSERT INTO burgers (name,bun,meat,calories,restaurant_id,created_at,updated_at) VALUES (%(name)s,%(bun)s,%(meat)s,%(calories)s,%(restaurant_id)s, NOW(),NOW())"
+        return connectToMySQL(DATABASE).query_db(query,data)
+
 
     @classmethod
     def get_one(cls, data):

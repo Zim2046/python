@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>index</title>
+</head>
+<body>
+  {{session}}
+
+    <div class="container">
+        <div style="display:flex; justify-content: right; ">
+          <div>
+            <a href="/new" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Add Magazine</a>
+            <a href="/user/account" class="btn btn-primary btn-lg active btn-sm btn btn-info" role="button" aria-pressed="true">Account</a>
+            <a href="/logout" class="btn btn-primary btn-lg active btn-sm btn-secondary" role="button" aria-pressed="true">logout</a>
+        </div>
+        </div>
+        <h1>{{magazine.title}}</h1>
+        <p> Added by {{user.first_name}} {{user.last_name}}</p>
+        <p>Descrition:</p>
+        <div>
+          <p>{{magazine.description}}</p>
+        </div>
+
+    </div>
+</body>
+</html>

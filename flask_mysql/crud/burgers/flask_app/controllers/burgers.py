@@ -1,9 +1,8 @@
 # burgers.py
-# burgers.py
 from flask_app import app
 from flask import render_template, redirect, request, session, flash
-from flask_app.models.burger import Burger
 
+from flask_app.models.burger import Burger
 
 @app.route('/')
 def index():
@@ -11,7 +10,7 @@ def index():
 
 
 @app.route('/create/burger', methods=['POST'])
-def create():
+def create_burger():
     data = {
         "name": request.form['name'],
         "bun": request.form['bun'],
@@ -33,7 +32,6 @@ def detail_page(burger_id):
         'id': burger_id
     }
     return render_template("details_page.html", burger=Burger.get_one(data))
-
 
 @app.route('/edit_page/<int:burger_id>')
 def edit_page(burger_id):
